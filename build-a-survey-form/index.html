@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Valorant Player Survey Form</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <a href="../../index.html">Back</a>
+    <p class="above">Completed 7/8/22, Created a form and practiced different input types and styling. Submission doesn't work, but feel free to give it a try if you don't believe me :)</p>
+    <hr>
+    <h1 id="title">Valorant Player Survey Form</h1>
+    <p id="description">A form to learn more about the Valorant player base</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required /></label>
+        <label id="email-label">Email <input id="email" type="email" placeholder="Enter your email" required /></label>
+        <label id="number-label">Age (Optional) <input id="number" type="number" min="10" max="99" placeholder="Enter your age" /></label>
+      </fieldset>
+      <fieldset>
+        <label>What is your favorite map?
+          <select id="dropdown">
+            <option value="">(Select One)</option>
+            <option value="1">Ascent</option>
+            <option value="2">Bind</option>
+            <option value="3">Breeze</option>
+            <option value="4">Fracture</option>
+            <option value="5">Haven</option>
+            <option value="6">Icebox</option>
+            <option value="7">Pearl</option>
+            <option value="8">Split</option>
+            <option value="9">None</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>What game mode do you play the most?</label>
+        <label><input type="radio" name="gamemode" class="inline" value="1" /> Unrated</label>
+        <label><input type="radio" name="gamemode" class="inline" value="2" /> Competitive</label>
+        <label><input type="radio" name="gamemode" class="inline" value="3" /> Deathmatch</label>
+        <label><input type="radio" name="gamemode" class="inline" value="4" /> Spike Rush</label>
+        <label><input type="radio" name="gamemode" class="inline" value="5"/> Other</label>
+        <label><input type="radio" name="gamemode" class="inline" value="0"/> N/A</label>
+      </fieldset>
+      <fieldset>
+        <label>What roles do you like to play?</label>
+        <label><input type="checkbox" class="inline" value="1" />Duelist</label>
+        <label><input type="checkbox" class="inline" value="2" />Controller</label>
+        <label><input type="checkbox" class="inline" value="3" />Initiator</label>
+        <label><input type="checkbox" class="inline" value="4" />Sentinel</label>
+      </fieldset>
+      <fieldset>
+        <label>Tell us about yourself:
+          <textarea name="bio" rows="3" cols="50" placeholder="I like to play Reyna and use the operator..."></textarea>
+			  </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
