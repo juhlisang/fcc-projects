@@ -2,7 +2,6 @@ html {
     font-size: 10px;
 }
 
-
 img {
     display: block;
 }
@@ -78,7 +77,7 @@ body {
     margin: 0;
     margin-bottom: 20px;
     text-align: center;
-    width: 550px;
+   /* width: 550px;*/
 }
 
 #bio-div {
@@ -101,7 +100,7 @@ body {
     }
 }
 
-ul, {
+ul {
     max-width: 550px;
     margin: 0 auto 40px auto;
     text-align: left;
